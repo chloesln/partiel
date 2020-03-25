@@ -1,3 +1,16 @@
+$couleur-principale: #5F3A42;
+$couleur-secondaire: #E2B9B3;
+
+$cp: $couleur-principale;
+$cs: $couleur-secondaire;
+
+
+
 body{
-    background-color: red;
+    h1{
+        color: $cp; 
+        &:hover{
+            color:$cs;
+        }
+    }
 }
