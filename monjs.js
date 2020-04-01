@@ -1,12 +1,16 @@
-/*var start = 'Bonjour ', name, end = ' !', result;
 
-name   = prompt('Quel est votre prénom ?');
-result = start + name + end;
-alert(result);*/
+$(document).ready(function(){
+    $(".table").append('<div id="loupe"></div>');
+    $("#loupe").hide();
 
-function chloe(arg){
-    alert('mon prenom est : ' + arg);
+    /*$('#monTableau').click(function(){
+        $("#loupe").show();
+    });*/
 
-}
-
-chloe('et voila');
+    $("td").hover(function() {
+        $(this).show();
+       
+    });
+     
+    
+});
